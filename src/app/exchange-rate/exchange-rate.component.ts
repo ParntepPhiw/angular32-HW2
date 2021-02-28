@@ -20,7 +20,6 @@ export class ExchangeRateComponent implements OnInit {
       currency1: '',
       currency2: '',
       amount1: '',
-      amount2: ''
     });
   }
 
