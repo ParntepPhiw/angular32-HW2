@@ -1,0 +1,28 @@
+<form [formGroup]="form" style="font-weight: bold;">
+    <div style="display: flex;">
+        <div style="background-color: rgb(255, 195, 172);">
+            <div>
+                From Currency : 
+                <p><input formControlName="currency1"></p>
+            </div>
+            <div>
+                Amount : 
+                <p><input formControlName="amount1"></p>
+            </div>
+        </div>
+        <div style="background-color: rgb(173, 223, 255);">
+            <div>
+                To Currency : 
+                <p><input formControlName="currency2"></p>
+            </div>
+            <div>
+                Result: 
+                <p style="border: 1px solid grey; background-color: lightgrey; height: 20px;">{{this.money2}}</p>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <button style="background-color: rgb(0, 99, 180); color: white; height: 40px; width: 120px;" (click)="calculateRate()">CONVERT</button>
+    </div>
+</form>
